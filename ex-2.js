@@ -375,4 +375,8 @@ const bills = [
 
 // Start coding here
 
-const newBills;
+
+//const x =(x,y) => x*y;
+const newBills = (members) => members.filter((checkMember)  => checkMember.member);
+
+console.log(newBills(bills));
