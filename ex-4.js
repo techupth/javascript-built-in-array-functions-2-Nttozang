@@ -374,4 +374,30 @@ const bills = [
 ];
 
 // Start coding here
-const totalMembers;
+
+
+
+/*
+function totalUniqueMembers(bills){
+  const uniqueMemberNames = new Set(bills.map(memberNames).filter(allname));
+  return uniqueMemberNames.size;
+}
+
+const memberNames = (bill) => bill.member ? bill.member.name : null;
+const allname = (names) => names !== null;
+
+console.log(totalUniqueMembers(bills));
+*/
+
+function allMembers(bills){
+  const uniqueMember = new Set(bills.map(memberNames).filter(allNames)) //JS obj set
+  return  uniqueMember.size 
+ 
+}
+
+const memberNames = (names) => names.member ? names.member.name : null;
+const allNames = (realname) => realname !== null;
+
+let result = (allMembers(bills));
+
+console.log(`Unique Members Count: ${result}`);
