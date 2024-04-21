@@ -375,20 +375,6 @@ const bills = [
 
 // Start coding here
 
-
-
-/*
-function totalUniqueMembers(bills){
-  const uniqueMemberNames = new Set(bills.map(memberNames).filter(allname));
-  return uniqueMemberNames.size;
-}
-
-const memberNames = (bill) => bill.member ? bill.member.name : null;
-const allname = (names) => names !== null;
-
-console.log(totalUniqueMembers(bills));
-*/
-
 function allMembers(bills){
   const uniqueMember = new Set(bills.map(memberNames).filter(allNames)) //JS obj set
   return  uniqueMember.size 
